@@ -1,36 +1,32 @@
-import { Compra } from '../../model/Compra';
-import { ICompraRepository, ICompraRepositoryDTO } from '../ICompraRepository';
+import { getRepository, Repository } from 'typeorm';
+
+import { Compra } from '../../entities/Compra';
+import { ICompraDTO, ICompraRepository } from '../ICompraRepository';
 
 class CompraRepository implements ICompraRepository {
-    private compra: Compra[];
+    private repository: Repository<Compra>;
 
-    private static INSTANCE: CompraRepository;
-
-    private constructor() {
-        this.compra = [];
+    constructor() {
+        this.repository = getRepository(Compra);
     }
-    public static getInstance(): CompraRepository {
-        if (!CompraRepository.INSTANCE) {
-            CompraRepository.INSTANCE = new CompraRepository();
-        }
-        return CompraRepository.INSTANCE;
-    }
-    create({ name, item, value }: ICompraRepositoryDTO): void {
-        const compras = new Compra();
 
-        Object.assign(compras, {
+    async create({ name, item, value }: ICompraDTO): Promise<void> {
+        const compra = this.repository.create({
             name,
             item,
             value,
         });
-        this.compra.push(compras);
+        await this.repository.save(compra);
     }
-    list(): Compra[] {
-        return this.compra;
+
+    async findByName(name: string): Promise<Compra> {
+        const compra = await this.repository.findOne({ name });
+        return compra;
     }
-    findByname(name: string): Compra {
-        const compras = this.compra.find(compra => compra.name === name);
-        return compras;
+
+    async list(): Promise<Compra[]> {
+        const compra = await this.repository.find();
+        return compra;
     }
 }
 

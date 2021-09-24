@@ -1,20 +1,30 @@
-import { CompraRepository } from '../../repositories/implementations/CompraRepository';
+import { inject, injectable } from 'tsyringe';
+
+import { ICompraRepository } from '../../repositories/ICompraRepository';
 
 interface IRequest {
     name: string;
     item: string;
-    value: number;
+    value: string;
 }
+
+@injectable()
 class CreateCompraUseCase {
-    constructor(private createCompraRepository: CompraRepository) {}
+    constructor(
+        @inject('CompraRepository')
+        private compraRepository: ICompraRepository,
+    ) {}
 
-    execute({ name, item, value }: IRequest): void {
-        const compraAlreadyExits = this.createCompraRepository.findByname(name);
+    async execute({ name, item, value }: IRequest): Promise<void> {
+        const categoryAlreadyExists = await this.compraRepository.findByName(
+            name,
+        );
 
-        if (compraAlreadyExits) {
-            throw new Error('Compra Already Exits');
+        if (categoryAlreadyExists) {
+            throw new Error('Compra Already Exists');
         }
-        this.createCompraRepository.create({
+
+        this.compraRepository.create({
             name,
             item,
             value,

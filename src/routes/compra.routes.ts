@@ -1,16 +1,9 @@
 import { Router } from 'express';
 
-import { createCompraControler } from '../modules/cars/useCases/createCompra';
-import { listCompraController } from '../modules/cars/useCases/listCompra';
+import { CreateCompraController } from '../modules/cars/useCases/createCompra/CreateCompraController';
 
-const compraRoutes = Router();
+const compraRouter = Router();
+const createCompraController = new CreateCompraController();
 
-compraRoutes.post('/', (request, response) => {
-    createCompraControler.handle(request, response);
-});
-
-compraRoutes.get('/', (request, response) => {
-    listCompraController.handle(request, response);
-});
-
-export { compraRoutes };
+compraRouter.post('/', createCompraController.handle);
+export { compraRouter };

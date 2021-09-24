@@ -1,15 +1,15 @@
-import { Compra } from '../model/Compra';
+import { Compra } from '../entities/Compra';
 
-interface ICompraRepositoryDTO {
+interface ICompraDTO {
     name: string;
     item: string;
-    value: number;
+    value: string;
 }
 
 interface ICompraRepository {
-    create({ name, item, value }: ICompraRepositoryDTO): void;
-    list(): Compra[];
-    findByname(name: string): Compra;
+    create({ name, item, value }: ICompraDTO): Promise<void>;
+    findByName(name: string): Promise<Compra>;
+    list(): Promise<Compra[]>;
 }
 
-export { ICompraRepository, ICompraRepositoryDTO };
+export { ICompraRepository, ICompraDTO };
