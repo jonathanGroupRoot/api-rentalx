@@ -1,5 +1,6 @@
 import { inject, injectable } from 'tsyringe';
 
+import { AppError } from '../../../../errors/AppError';
 import { ICompraRepository } from '../../repositories/ICompraRepository';
 
 interface IRequest {
@@ -21,7 +22,7 @@ class CreateCompraUseCase {
         );
 
         if (categoryAlreadyExists) {
-            throw new Error('Compra Already Exists');
+            throw new AppError('Compra Already Exists');
         }
 
         this.compraRepository.create({
