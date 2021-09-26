@@ -1,13 +1,13 @@
 import { container } from 'tsyringe';
 
-import { UserRepository } from '../../modules/accounts/repositories/Implementations/UserRepository';
-import { IUserRepository } from '../../modules/accounts/repositories/IUserRepository';
-import { ICategoriesRepository } from '../../modules/cars/repositories/ICategoriesRepository';
-import { ICompraRepository } from '../../modules/cars/repositories/ICompraRepository';
-import { CategoriesRepository } from '../../modules/cars/repositories/implementations/CategoriesRepository';
-import { CompraRepository } from '../../modules/cars/repositories/implementations/CompraRepository';
-import { SpecificationsRepository } from '../../modules/cars/repositories/implementations/SpecificationsRepository';
-import { ISpecificationRepository } from '../../modules/cars/repositories/ISpecificatiosRepository';
+import { UserRepository } from '@modules/accounts/infra/typeorm/repositories/UserRepository';
+import { IUserRepository } from '@modules/accounts/repositories/IUserRepository';
+import { CategoriesRepository } from '@modules/cars/infra/typeorm/repositories/CategoriesRepository';
+import { CompraRepository } from '@modules/cars/infra/typeorm/repositories/CompraRepository';
+import { SpecificationsRepository } from '@modules/cars/infra/typeorm/repositories/SpecificationsRepository';
+import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository';
+import { ICompraRepository } from '@modules/cars/repositories/ICompraRepository';
+import { ISpecificationRepository } from '@modules/cars/repositories/ISpecificatiosRepository';
 
 // ICategoriesRepository
 container.registerSingleton<ICategoriesRepository>(

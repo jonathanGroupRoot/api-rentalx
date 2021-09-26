@@ -1,7 +1,11 @@
 import { getRepository, Repository } from 'typeorm';
 
-import { Compra } from '../../entities/Compra';
-import { ICompraDTO, ICompraRepository } from '../ICompraRepository';
+import {
+    ICompraDTO,
+    ICompraRepository,
+} from '@modules/cars/repositories/ICompraRepository';
+
+import { Compra } from '../entities/Compra';
 
 class CompraRepository implements ICompraRepository {
     private repository: Repository<Compra>;

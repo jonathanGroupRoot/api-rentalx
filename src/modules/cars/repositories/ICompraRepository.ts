@@ -1,4 +1,4 @@
-import { Compra } from '../entities/Compra';
+import { Compra } from '../infra/typeorm/entities/Compra';
 
 interface ICompraDTO {
     name: string;
