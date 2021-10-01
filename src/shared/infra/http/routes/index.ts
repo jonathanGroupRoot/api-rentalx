@@ -1,6 +1,7 @@
 import { Router } from 'express';
 
 import { authenticateRouter } from './authenticate.routes';
+import { carsRouter } from './cars.routes';
 import { categoriesRoutes } from './categories.routes';
 import { compraRouter } from './compra.routes';
 import { specificationRoutes } from './specifications.routes';
@@ -13,5 +14,6 @@ router.use('/specification', specificationRoutes);
 router.use('/compra', compraRouter);
 router.use('/users', userRouter);
 router.use(authenticateRouter);
+router.use('/cars', carsRouter);
 
 export { router };
