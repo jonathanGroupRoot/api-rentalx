@@ -30,7 +30,7 @@ O usúario responsável pelo cadastro deve ser um usuário admnistrador.
 
 **Requisito funcional**
 Deve ser possível cadastrar a imagem do carro.
-Deve ser possivel listar todos os carros.
+
 
 **Requisito nao funcional**
 Usar o multer para upload de arquivos.

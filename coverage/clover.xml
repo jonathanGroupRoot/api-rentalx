@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633125020091" clover="3.2.0">
-  <project timestamp="1633125020092" name="All files">
-    <metrics statements="556" coveredstatements="537" conditionals="70" coveredconditionals="64" methods="36" coveredmethods="31" elements="662" coveredelements="632" complexity="0" loc="556" ncloc="556" packages="11" files="15" classes="15"/>
+<coverage generated="1633377818507" clover="3.2.0">
+  <project timestamp="1633377818507" name="All files">
+    <metrics statements="717" coveredstatements="689" conditionals="92" coveredconditionals="85" methods="48" coveredmethods="42" elements="857" coveredelements="816" complexity="0" loc="717" ncloc="717" packages="15" files="19" classes="19"/>
     <package name="modules.accounts.infra.typeorm.entities">
       <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="User.ts" path="C:\api-rentalx\src\modules\accounts\infra\typeorm\entities\User.ts">
@@ -210,61 +210,88 @@
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="30" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
-        <line num="39" count="3" type="stmt"/>
-        <line num="40" count="3" type="stmt"/>
-        <line num="41" count="3" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
-        <line num="44" count="3" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
-        <line num="46" count="3" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
-        <line num="48" count="3" type="stmt"/>
-        <line num="49" count="3" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="54" count="3" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
-        <line num="56" count="3" type="stmt"/>
-        <line num="57" count="3" type="stmt"/>
-        <line num="58" count="3" type="stmt"/>
-        <line num="59" count="3" type="stmt"/>
-        <line num="60" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="57" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="60" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="61" count="9" type="stmt"/>
         <line num="62" count="9" type="stmt"/>
         <line num="63" count="9" type="stmt"/>
         <line num="64" count="9" type="stmt"/>
         <line num="65" count="9" type="stmt"/>
-        <line num="66" count="3" type="stmt"/>
+        <line num="66" count="4" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
       </file>
       <file name="Category.ts" path="C:\api-rentalx\src\modules\cars\infra\typeorm\entities\Category.ts">
         <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="Specification.ts" path="C:\api-rentalx\src\modules\cars\infra\typeorm\entities\Specification.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -283,54 +310,27 @@
         <line num="16" count="4" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
         <line num="18" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-      </file>
-      <file name="Specification.ts" path="C:\api-rentalx\src\modules\cars\infra\typeorm\entities\Specification.ts">
-        <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="modules.cars.repositories.in-memory">
-      <metrics statements="127" coveredstatements="118" conditionals="23" coveredconditionals="19" methods="14" coveredmethods="11"/>
+      <metrics statements="133" coveredstatements="120" conditionals="23" coveredconditionals="19" methods="15" coveredmethods="11"/>
       <file name="CarsRepositoryInMemory.ts" path="C:\api-rentalx\src\modules\cars\repositories\in-memory\CarsRepositoryInMemory.ts">
-        <metrics statements="60" coveredstatements="58" conditionals="13" coveredconditionals="9" methods="5" coveredmethods="5"/>
+        <metrics statements="66" coveredstatements="60" conditionals="13" coveredconditionals="9" methods="6" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="8" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="9" count="9" type="stmt"/>
         <line num="10" count="9" type="stmt"/>
         <line num="11" count="9" type="stmt"/>
@@ -355,10 +355,10 @@
         <line num="30" count="9" type="stmt"/>
         <line num="31" count="9" type="stmt"/>
         <line num="32" count="9" type="stmt"/>
-        <line num="33" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="34" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="35" count="4" type="stmt"/>
-        <line num="36" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="37" count="4" type="stmt"/>
         <line num="38" count="4" type="stmt"/>
         <line num="39" count="4" type="stmt"/>
@@ -376,13 +376,19 @@
         <line num="51" count="4" type="stmt"/>
         <line num="52" count="4" type="stmt"/>
         <line num="53" count="4" type="stmt"/>
-        <line num="54" count="9" type="stmt"/>
-        <line num="55" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="55" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="56" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="57" count="2" type="stmt"/>
-        <line num="58" count="9" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
+        <line num="59" count="12" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="12" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
       </file>
       <file name="CategoriesRepositoryInMemory.ts" path="C:\api-rentalx\src\modules\cars\repositories\in-memory\CategoriesRepositoryInMemory.ts">
         <metrics statements="31" coveredstatements="28" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
@@ -528,16 +534,16 @@
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
-        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
         <line num="31" count="2" type="stmt"/>
@@ -620,20 +626,199 @@
         <line num="27" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="modules.rentals.infra.typeorm.entities">
+      <metrics statements="29" coveredstatements="29" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Rental.ts" path="C:\api-rentalx\src\modules\rentals\infra\typeorm\entities\Rental.ts">
+        <metrics statements="29" coveredstatements="29" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.rentals.repositories.in-Memory">
+      <metrics statements="37" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="RentalsRepositoryInMemory.ts" path="C:\api-rentalx\src\modules\rentals\repositories\in-Memory\RentalsRepositoryInMemory.ts">
+        <metrics statements="37" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.rentals.useCases.createRentals">
+      <metrics statements="64" coveredstatements="59" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="CreateRentalUseCase.ts" path="C:\api-rentalx\src\modules\rentals\useCases\createRentals\CreateRentalUseCase.ts">
+        <metrics statements="64" coveredstatements="59" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared.container.providers.DateProvider.implementantions">
+      <metrics statements="25" coveredstatements="25" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="DayjsDateProvider.ts" path="C:\api-rentalx\src\shared\container\providers\DateProvider\implementantions\DayjsDateProvider.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="shared.errors">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="AppError.ts" path="C:\api-rentalx\src\shared\errors\AppError.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
+        <line num="1" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
       </file>
     </package>
   </project>

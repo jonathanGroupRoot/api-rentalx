@@ -14,26 +14,23 @@ class CreateCarSpecificationUseCase {
     constructor(
         @inject('CarsRepository')
         private carsRepository: ICarsRepository,
-
         @inject('SpecificationRepository')
-        private specificationRepository: ISpecificationRepository,
+        private specificationsRepository: ISpecificationRepository,
     ) {}
     async execute({ car_id, specifications_id }: IRequest): Promise<Car> {
-        const carsExists = await this.carsRepository.findById(car_id);
+        const carExists = await this.carsRepository.findById(car_id);
 
-        if (!carsExists) {
-            throw new AppError('Car does not exists');
-        }
+        if (!carExists) throw new AppError('Car does not exist');
 
-        const specifications = await this.specificationRepository.findByIds(
+        const specifications = await this.specificationsRepository.findByIds(
             specifications_id,
         );
 
-        carsExists.specifications = specifications;
+        carExists.specifications = specifications;
 
-        await this.carsRepository.create(carsExists);
-        console.log(carsExists);
-        return carsExists;
+        await this.carsRepository.create(carExists);
+
+        return carExists;
     }
 }
 

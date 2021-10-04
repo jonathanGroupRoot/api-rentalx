@@ -16,10 +16,12 @@ export class CreateSpecificationsCars1633112592603
                     {
                         name: 'car_id',
                         type: 'uuid',
+                        isNullable: true,
                     },
                     {
                         name: 'specification_id',
                         type: 'uuid',
+                        isNullable: true,
                     },
                     {
                         name: 'created_at',
