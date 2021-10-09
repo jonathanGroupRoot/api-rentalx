@@ -1,6 +1,12 @@
 {
     "cSpell.words": [
+        "camelcase",
+        "compra",
         "dtos",
+        "especificação",
+        "funcionando",
+        "middlewares",
+        "Servidor",
         "tsyringe",
         "typeorm"
     ]

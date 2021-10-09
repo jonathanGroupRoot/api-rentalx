@@ -11,6 +11,9 @@ class CarRepository implements ICarsRepository {
     constructor() {
         this.repository = getRepository(Car);
     }
+    async updateAvailable(id: string, available: boolean): Promise<void> {
+        return null;
+    }
     async create({
         name,
         description,

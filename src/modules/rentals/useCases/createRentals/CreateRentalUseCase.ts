@@ -10,7 +10,10 @@ import { AppError } from '@shared/errors/AppError';
 @injectable()
 class CreateRentalUseCase {
     constructor(
+        @inject('RentalsRepository')
         private rentalsRepository: IRentalsRepository,
+
+        @inject('DayjsDateProvider')
         private dateProvider: IDateProvider,
 
         @inject('CarsRepository')
@@ -42,8 +45,8 @@ class CreateRentalUseCase {
         const dateNow = this.dateProvider.dateNow();
 
         const compare = this.dateProvider.compareInHours(
-            expected_return_date,
             dateNow,
+            expected_return_date,
         );
 
         if (compare < minimumHour) {
